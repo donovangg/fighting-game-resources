@@ -9,43 +9,53 @@ export default function Home() {
       title: "Fundamentals",
       description: "My foosies dawg",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Capcom",
       description: "3,2,1 Shoryukenn",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
+      id: 1,
       title: "Airdasher",
       description: "Kokonoe Black Hole setups",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
+      id: 2,
       title: "French Bread",
       description: "Lord Kamone",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
+      id: 3,
       title: "3D Games",
       description: "Check this kbd",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
+      id: 4,
       title: "Fundamentals",
       description: "My foosies dawg",
       path: "",
-      imgSrc: ""
+      imgSrc: "",
     },
-  ]
+  ];
   return (
     <Layout>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <p className="text-xl text-cyan-300">yeeeeet</p>
+      <header>
+        <h2>A Bunch of Resources for you</h2>
+      </header>
+      {categories.map((category) => (
+        <div key={category.id}>
+          <Card />
+        </div>
+      ))}
     </Layout>
   );
 }
