@@ -6,54 +6,57 @@ import Card from "../components/Card";
 export default function Home() {
   const categories = [
     {
+      id: 1,
       title: "Fundamentals",
       description: "My foosies dawg",
       path: "",
-      imgSrc: "",
-    },
-    {
-      title: "Capcom",
-      description: "3,2,1 Shoryukenn",
-      path: "",
-      imgSrc: "",
-    },
-    {
-      id: 1,
-      title: "Airdasher",
-      description: "Kokonoe Black Hole setups",
-      path: "",
-      imgSrc: "",
+      imgSrc: "assets/3d.png",
     },
     {
       id: 2,
-      title: "French Bread",
-      description: "Lord Kamone",
+      title: "Capcom",
+      description: "3,2,1 Shoryukenn",
       path: "",
-      imgSrc: "",
+      imgSrc: "assets/3d.png",
     },
     {
       id: 3,
-      title: "3D Games",
-      description: "Check this kbd",
+      title: "Airdasher",
+      description: "Kokonoe Black Hole setups",
       path: "",
-      imgSrc: "",
+      imgSrc: "assets/3d.png",
     },
     {
       id: 4,
-      title: "Fundamentals",
-      description: "My foosies dawg",
+      title: "French Bread",
+      description: "Lord Kamone",
       path: "",
-      imgSrc: "",
+      imgSrc: "assets/3d.png",
+    },
+    {
+      id: 5,
+      title: "3D Games",
+      description: "Check this kbd",
+      path: "",
+      imgSrc: "assets/3d.png",
+    },
+    {
+      id: 6,
+      title: "NRS",
+      description: "I'm Comin!!!",
+      path: "",
+      imgSrc: "assets/3d.png",
     },
   ];
   return (
     <Layout>
-      <header>
-        <h2>A Bunch of Resources for you</h2>
+      <header className="flex flex-col justify-center items-center">
+        <h2>A Bunch of DANK Resources for you</h2>
+        <p>Yee yee Turn up</p>
       </header>
       {categories.map((category) => (
         <div key={category.id}>
-          <Card />
+          <Card title={category.title} description={category.description} imgSrc={category.imgSrc}/>
         </div>
       ))}
     </Layout>

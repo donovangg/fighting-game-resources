@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Card() {
+export default function Card({title, imgSrc}) {
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
       <a href="#">
-        <img className="rounded-t-lg w-full" src="assets/master-icon.png" alt="" />
+        <img className="rounded-t-lg w-full" src={imgSrc} alt="" />
       </a>
       <div className="p-5">
         <a href="#">
