@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Card({ title, imgSrc }) {
+export default function Card({ title, imgSrc, subheader, description }) {
   return (
-    <div className="max-w-xs flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
+    <div className="w-80 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
       <div className="flex-1">
         <a href="#">
           <img
@@ -14,14 +14,14 @@ export default function Card({ title, imgSrc }) {
       </div>
       <div className="p-5 flex-1">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-            Noteworthy technology acquisitions 2021
-          </h5>
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            {title}
+          </h2>
         </a>
-        <p className="mb-3 font-normal text-gray-700">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
+        <h3 className="mb-3 font-normal text-gray-700">
+          {subheader}
+        </h3>
+        <p className="mb-3 font-normal text-gray-700">{description}</p>
         <a
           href="#"
           className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
