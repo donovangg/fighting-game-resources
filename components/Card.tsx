@@ -1,12 +1,18 @@
 import React from "react";
 
-export default function Card({title, imgSrc}) {
+export default function Card({ title, imgSrc }) {
   return (
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
-      <a href="#">
-        <img className="rounded-t-lg w-full" src={imgSrc} alt="" />
-      </a>
-      <div className="p-5">
+    <div className="max-w-xs flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
+      <div className="flex-1">
+        <a href="#">
+          <img
+            className="rounded-t-lg border-2 border-red-400 h-40 w-full"
+            src={imgSrc}
+            alt=""
+          />
+        </a>
+      </div>
+      <div className="p-5 flex-1">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
             Noteworthy technology acquisitions 2021

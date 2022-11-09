@@ -10,28 +10,28 @@ export default function Home() {
       title: "Fundamentals",
       description: "My foosies dawg",
       path: "",
-      imgSrc: "assets/3d.png",
+      imgSrc: "assets/footsies.gif",
     },
     {
       id: 2,
       title: "Capcom",
       description: "3,2,1 Shoryukenn",
       path: "",
-      imgSrc: "assets/3d.png",
+      imgSrc: "assets/capcom.webp",
     },
     {
       id: 3,
       title: "Airdasher",
       description: "Kokonoe Black Hole setups",
       path: "",
-      imgSrc: "assets/3d.png",
+      imgSrc: "assets/mr-dolphin.jpeg",
     },
     {
       id: 4,
       title: "French Bread",
       description: "Lord Kamone",
       path: "",
-      imgSrc: "assets/3d.png",
+      imgSrc: "assets/akiha.jpeg",
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ export default function Home() {
       title: "NRS",
       description: "I'm Comin!!!",
       path: "",
-      imgSrc: "assets/3d.png",
+      imgSrc: "assets/nrs.jpeg",
     },
   ];
   return (
@@ -54,11 +54,17 @@ export default function Home() {
         <h2>A Bunch of DANK Resources for you</h2>
         <p>Yee yee Turn up</p>
       </header>
-      {categories.map((category) => (
-        <div key={category.id}>
-          <Card title={category.title} description={category.description} imgSrc={category.imgSrc}/>
-        </div>
-      ))}
+      <div className="flex flex-wrap gap-6 border-2 border-green-400">
+        {categories.map((category) => (
+          <div key={category.id}>
+            <Card
+              title={category.title}
+              description={category.description}
+              imgSrc={category.imgSrc}
+            />
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }
