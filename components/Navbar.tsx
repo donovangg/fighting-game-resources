@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="border-2 border-cyan-400">
+    <nav className="border-b-2 py-4">
       <ul className=" grid grid-cols-2">
-        <li className="border-2 border-red-300 text-center">
+        <li className="text-center">
           <Link href="/">
             Logo
           </Link>

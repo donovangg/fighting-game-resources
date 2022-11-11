@@ -9,7 +9,7 @@ const categories = [
     title: "Fundamentals",
     subheader: "My foosies dawg",
     description: "Stuff you must read. Good bookmarks",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/footsies.gif",
   },
   {
@@ -17,7 +17,7 @@ const categories = [
     title: "Capcom",
     subheader: "3,2,1 Shoryukenn",
     description: "For games like SF6, CVS2, 3S, Mahvel",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/capcom.webp",
   },
   {
@@ -25,7 +25,7 @@ const categories = [
     title: "Airdasher",
     subheader: "Kokonoe Black Hole setups",
     description: "Come here for Guilty Gear, BB, P4u",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/mr-dolphin.jpeg",
   },
   {
@@ -33,7 +33,7 @@ const categories = [
     title: "French Bread",
     subheader: "Lord Kamone",
     description: "For Dengeki, Uni, Melty Blood",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/akiha.jpeg",
   },
   {
@@ -41,7 +41,7 @@ const categories = [
     title: "3D Games",
     subheader: "Check this kbd",
     description: "Tekken, Soul Calibur, VF, DOA",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/3d.png",
   },
   {
@@ -49,7 +49,7 @@ const categories = [
     title: "NRS",
     subheader: "I'm Comin!!!",
     description: "MK and Injustice",
-    path: "",
+    path: "./capcom",
     imgSrc: "assets/nrs.jpeg",
   },
 ];
@@ -61,7 +61,7 @@ export default function Home() {
         <h2>A Bunch of DANK Resources for you</h2>
         <p>Yee yee Turn up</p>
       </header>
-      <div className="flex flex-wrap gap-6 border-2 justify-center w-3/4 mx-auto border-green-400">
+      <div className="flex flex-wrap gap-6 border-2 justify-center w-3/4 mx-auto pb-20 border-green-400">
         {categories.map((category) => (
           <div key={category.id}>
             <Card
@@ -69,6 +69,7 @@ export default function Home() {
               description={category.description}
               subheader={category.subheader}
               imgSrc={category.imgSrc}
+              path={category.path}
             />
           </div>
         ))}
