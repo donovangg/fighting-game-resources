@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../components/Layout";
 
 export default function home() {
   return (
-    <div>kokonoooe</div>
-  )
+    <Layout>
+      <div>kokonoooe</div>
+    </Layout>
+  );
 }

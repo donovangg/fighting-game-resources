@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../components/Layout";
 
 export default function threeD() {
   return (
-    <div>3d</div>
-  )
+    <Layout>
+      <div>3d</div>
+    </Layout>
+  );
 }

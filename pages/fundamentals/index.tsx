@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from "../../components/Layout";
 
 export default function home() {
   return (
-    <div>Fundies</div>
+    <Layout>Fundies</Layout>
   )
 }

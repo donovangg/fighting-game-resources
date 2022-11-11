@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from "../../components/Layout";
 
 export default function Home() {
   return (
-    <div>Capcom page</div>
+    <Layout>Capcom page</Layout>
   )
 }
