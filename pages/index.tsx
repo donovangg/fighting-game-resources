@@ -9,7 +9,7 @@ const categories = [
     title: "Fundamentals",
     subheader: "My foosies dawg",
     description: "Stuff you must read. Good bookmarks",
-    path: "./capcom",
+    path: "./fundamentals",
     imgSrc: "assets/footsies.gif",
   },
   {
@@ -22,10 +22,10 @@ const categories = [
   },
   {
     id: 3,
-    title: "Airdasher",
+    title: "Airdashers",
     subheader: "Kokonoe Black Hole setups",
     description: "Come here for Guilty Gear, BB, P4u",
-    path: "./capcom",
+    path: "./airdashers",
     imgSrc: "assets/mr-dolphin.jpeg",
   },
   {
@@ -33,7 +33,7 @@ const categories = [
     title: "French Bread",
     subheader: "Lord Kamone",
     description: "For Dengeki, Uni, Melty Blood",
-    path: "./capcom",
+    path: "./french-bread",
     imgSrc: "assets/akiha.jpeg",
   },
   {
@@ -41,7 +41,7 @@ const categories = [
     title: "3D Games",
     subheader: "Check this kbd",
     description: "Tekken, Soul Calibur, VF, DOA",
-    path: "./capcom",
+    path: "./3d",
     imgSrc: "assets/3d.png",
   },
   {
@@ -49,7 +49,7 @@ const categories = [
     title: "NRS",
     subheader: "I'm Comin!!!",
     description: "MK and Injustice",
-    path: "./capcom",
+    path: "./nrs",
     imgSrc: "assets/nrs.jpeg",
   },
 ];
