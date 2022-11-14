@@ -16,15 +16,17 @@ export const getStaticProps = async () => {
 export default function threeD({ resources }) {
   return (
     <Layout>
-      {resources.map((resource) => (
-        <div>
-          {resource.category.includes("airdashers") ? (
-             <ResourceCard title={resource.title} />
-          ) : (
-            ""
-          )}
-        </div>
-      ))}
+      <div className="flex flex-wrap gap-6 justify-center">
+        {resources.map((resource) => (
+          <>
+            {resource.category.includes("airdashers") ? (
+              <ResourceCard title={resource.title} />
+            ) : (
+              ""
+            )}
+          </>
+        ))}
+      </div>
     </Layout>
   );
 }
