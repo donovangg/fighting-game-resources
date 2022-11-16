@@ -17,15 +17,17 @@ export default function home({ resources }) {
   return (
     <Layout>
       Akiha
+      <div className="flex flex-wrap gap-6 justify-center">
       {resources.map((resource) => (
-        <div>
+        <>
           {resource.category.includes("french bread") ? (
              <ResourceCard title={resource.title} />
           ) : (
             ""
           )}
-        </div>
+        </>
       ))}
+      </div>
     </Layout>
   );
 }

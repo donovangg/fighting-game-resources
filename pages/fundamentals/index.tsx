@@ -17,15 +17,17 @@ export default function home({ resources }) {
   return (
     <Layout>
       <h1>FOOSIES</h1>
-      {resources.map((resource) => (
-        <div>
-          {resource.category.includes("fundamentals") ? (
-            <ResourceCard title={resource.title} />
-          ) : (
-            ""
-          )}
-        </div>
-      ))}
+      <div className="flex flex-wrap gap-6 justify-center">
+        {resources.map((resource) => (
+          <div>
+            {resource.category.includes("fundamentals") ? (
+              <ResourceCard title={resource.title} />
+            ) : (
+              ""
+            )}
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }
