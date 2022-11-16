@@ -1,21 +1,35 @@
 import React from "react";
 import Link from "next/link";
-import { FaGithub  } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className="border-b-2 py-4">
       <ul className=" grid grid-cols-2">
-        <li className="text-center">
+        <li className="flex justify-center border-2">
           <Link href="/">
-            Logo
+            <Image
+              src="/assets/ryu.png"
+              alt="Picture of the author"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
           </Link>
         </li>
-        <li className="flex justify-center items-center">
-          <Link href="https://playvalorant.com/en-us/" target="_blank">
-            <FaGithub />
-          </Link>
-        </li>
+        <ul className="flex justify-center gap-6">
+          <li className="flex justify-center items-center">
+            <Link href="https://playvalorant.com/en-us/" target="_blank">
+              <FaGithub className="text-3xl" />
+            </Link>
+          </li>
+          <li className="flex justify-center items-center">
+            <Link href="https://playvalorant.com/en-us/" target="_blank">
+              Sign In
+            </Link>
+          </li>
+        </ul>
       </ul>
     </nav>
   );

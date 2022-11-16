@@ -20,7 +20,13 @@ export default function threeD({ resources }) {
         {resources.map((resource) => (
           <>
             {resource.category.includes("airdashers") ? (
-              <ResourceCard title={resource.title} />
+              <div key={resource.id}>
+                <ResourceCard
+                  title={resource.title}
+                  type={resource.type}
+                  link={resource.link}
+                />
+              </div>
             ) : (
               ""
             )}
