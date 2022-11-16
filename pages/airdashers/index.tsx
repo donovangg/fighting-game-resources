@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function home() {
+export default function home({ resources }) {
   return (
     <Layout>
       <div>kokonoooe</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { supabase } from "../../utils/supabase";
+import ResourceCard from "../../components/ResourceCard";
 
 export const getStaticProps = async () => {
   const { data: resources } = await supabase.from("resources").select("*");
@@ -19,7 +20,7 @@ export default function home({ resources }) {
       {resources.map((resource) => (
         <div>
           {resource.category.includes("french bread") ? (
-            <h2>{resource.title}</h2>
+             <ResourceCard title={resource.title} />
           ) : (
             ""
           )}
