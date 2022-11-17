@@ -21,7 +21,11 @@ export default function home({ resources }) {
         {resources.map((resource) => (
           <div>
             {resource.category.includes("fundamentals") ? (
-              <ResourceCard title={resource.title} />
+              <ResourceCard
+                title={resource.title}
+                type={resource.type}
+                link={resource.link}
+              />
             ) : (
               ""
             )}

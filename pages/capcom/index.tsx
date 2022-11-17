@@ -19,15 +19,19 @@ export default function Home({ resources }) {
       Capcom page
       <h2>Is Marvel anime</h2>
       <div className="flex flex-wrap gap-6 justify-center">
-      {resources.map((resource) => (
-        <>
-          {resource.category.includes("capcom") ? (
-            <ResourceCard title={resource.title} />
-          ) : (
-            ""
-          )}
-        </>
-      ))}
+        {resources.map((resource) => (
+          <>
+            {resource.category.includes("capcom") ? (
+              <ResourceCard
+                title={resource.title}
+                type={resource.type}
+                link={resource.link}
+              />
+            ) : (
+              ""
+            )}
+          </>
+        ))}
       </div>
     </Layout>
   );

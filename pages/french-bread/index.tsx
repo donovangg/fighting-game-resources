@@ -18,15 +18,19 @@ export default function home({ resources }) {
     <Layout>
       Akiha
       <div className="flex flex-wrap gap-6 justify-center">
-      {resources.map((resource) => (
-        <>
-          {resource.category.includes("french bread") ? (
-             <ResourceCard title={resource.title} />
-          ) : (
-            ""
-          )}
-        </>
-      ))}
+        {resources.map((resource) => (
+          <>
+            {resource.category.includes("french bread") ? (
+              <ResourceCard
+                title={resource.title}
+                type={resource.type}
+                link={resource.link}
+              />
+            ) : (
+              ""
+            )}
+          </>
+        ))}
       </div>
     </Layout>
   );
