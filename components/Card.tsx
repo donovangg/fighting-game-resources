@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Card({ title, imgSrc, subheader, description, path }) {
   return (
-    <div className="w-80 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
+    <div className="w-80 flex flex-col rounded-lg bg-gray-800 border-gray-700 shadow-md">
       <div className="flex-1">
         <Link href={path}>
           <img
-            className="rounded-t-lg border-2 border-red-400 h-40 w-full"
+            className="rounded-t-lg h-40 w-full"
             src={imgSrc}
             alt=""
           />
@@ -15,12 +15,12 @@ export default function Card({ title, imgSrc, subheader, description, path }) {
       </div>
       <div className="p-5 flex-1">
         <Link href={path}>
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">
             {title}
           </h2>
         </Link>
-        <h3 className="mb-3 font-normal text-gray-700">{subheader}</h3>
-        <p className="mb-3 font-normal text-gray-700">{description}</p>
+        <h3 className="mb-3 font-normal text-gray-400">{subheader}</h3>
+        <p className="mb-3 font-normal text-gray-400">{description}</p>
         <Link
           href={path}
           className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
