@@ -3,6 +3,7 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 import { supabase } from "../utils/supabase";
+import Header from "../components/Header";
 
 const categories = [
   {
@@ -62,7 +63,7 @@ export default function Home() {
         <h2>A Bunch of DANK Resources for you</h2>
         <p>Yee yee Turn up</p>
       </header>
-      <div className="flex flex-wrap gap-6 border-2 justify-center w-3/4 mx-auto pb-20">
+      <div className="flex flex-wrap gap-6 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (
           <div key={category.id}>
             <Card

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { supabase } from "../../utils/supabase";
 import ResourceCard from "../../components/ResourceCard";
+import Header from "../../components/Header";
 
 export const getStaticProps = async () => {
   const { data: resources } = await supabase.from("resources").select("*");
@@ -13,10 +14,13 @@ export const getStaticProps = async () => {
   };
 };
 
+let title = "Fundamentals";
+let subheader = "Dank";
+
 export default function home({ resources }) {
   return (
     <Layout>
-      <h1>FOOSIES</h1>
+      <Header title={title} subheader={subheader} />
       <div className="flex flex-wrap gap-6 justify-center">
         {resources.map((resource) => (
           <div>
