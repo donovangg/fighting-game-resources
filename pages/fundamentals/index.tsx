@@ -21,9 +21,9 @@ export default function home({ resources }) {
   return (
     <Layout>
       <Header title={title} subheader={subheader} />
-      <div className="flex flex-wrap gap-6 justify-center">
+      <div className="flex flex-wrap gap-6  justify-center">
         {resources.map((resource) => (
-          <div>
+          <>
             {resource.category.includes("fundamentals") ? (
               <ResourceCard
                 title={resource.title}
@@ -33,7 +33,7 @@ export default function home({ resources }) {
             ) : (
               ""
             )}
-          </div>
+          </>
         ))}
       </div>
     </Layout>
