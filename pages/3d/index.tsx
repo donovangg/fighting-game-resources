@@ -24,7 +24,7 @@ export default function threeD({ resources }) {
       <div className="flex flex-wrap gap-6 justify-center">
         {resources.map((resource) => (
           <>
-            {resource.category.includes("airdashers") ? (
+            {resource.category.includes("3D") ? (
               <div key={resource.id}>
                 <ResourceCard
                   title={resource.title}
