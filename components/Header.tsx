@@ -5,7 +5,6 @@ export default function Header({ title, subheader }) {
     <header className="flex flex-col justify-center items-center py-20">
       <h2>{title}</h2>
       <p>{subheader}</p>
-      >>>>lZXmc;xlN
     </header>
   );
 }

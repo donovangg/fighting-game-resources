@@ -24,7 +24,7 @@ export default function Home({ resources }) {
       <div className="flex flex-wrap gap-6 justify-center">
         {resources.map((resource) => (
           <>
-            {resource.category.includes("capcom") ? (
+            {resource.category.includes("Capcom") ? (
               <ResourceCard
                 title={resource.title}
                 type={resource.type}
