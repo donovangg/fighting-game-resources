@@ -7,7 +7,14 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'airdasher': "url('/assets/mr-dolphin.jpeg')",
+        'capcom': "url('/assets/capcom.webp')",
+        'fundamentals': "url('/assets/footsies.gif')",
+        'bread': "url('/assets/akiha.jpeg')",
+      }
+    },
   },
   plugins: [],
 }

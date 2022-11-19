@@ -16,11 +16,12 @@ export const getStaticProps = async () => {
 
 let title = "Hire Me Pls"
 let subheader = "Dank"
+let imgSrc = "/assets/3d.png"
 
 export default function threeD({ resources }) {
   return (
     <Layout>
-      <Header title={title} subheader={subheader}/>
+      <Header title={title} imgSrc={imgSrc} subheader={subheader}/>
       <div className="flex flex-wrap gap-6 justify-center">
         {resources.map((resource) => (
           <>
