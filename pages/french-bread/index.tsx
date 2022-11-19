@@ -22,7 +22,7 @@ export default function home({ resources }) {
   return (
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="flex flex-wrap gap-6 justify-center">
+      <div className="flex flex-wrap gap-6 py-40 justify-center">
         {resources.map((resource) => (
           <>
             {resource.category.includes("French Bread") ? (

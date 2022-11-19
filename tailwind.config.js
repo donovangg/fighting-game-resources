@@ -13,6 +13,7 @@ module.exports = {
         'capcom': "url('/assets/capcom.webp')",
         'fundamentals': "url('/assets/footsies.gif')",
         'bread': "url('/assets/akiha.jpeg')",
+        '3d':  "url('/assets/3d.png')",
       }
     },
   },
