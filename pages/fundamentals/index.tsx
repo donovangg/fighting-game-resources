@@ -22,7 +22,8 @@ export default function home({ resources }) {
   return (
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="flex flex-wrap gap-6 py-40 justify-center">
+      <div className="py-20">
+      <div className="flex flex-wrap gap-6 w-11/12 mx-auto content-center justify-center">
         {resources.map((resource) => (
           <>
             {resource.category.includes("Fundamentals") ? (
@@ -30,12 +31,14 @@ export default function home({ resources }) {
                 title={resource.title}
                 type={resource.type}
                 link={resource.link}
+                description={resource.description}
               />
             ) : (
               ""
             )}
           </>
         ))}
+      </div>
       </div>
     </Layout>
   );

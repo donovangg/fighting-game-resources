@@ -16,26 +16,29 @@ export const getStaticProps = async () => {
 
 let title = "Capcom";
 let subheader = "Dank";
-let imgSrc = "bg-capcom"
+let imgSrc = "bg-capcom";
 
 export default function Home({ resources }) {
   return (
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="flex flex-wrap gap-6 py-40 justify-center">
-        {resources.map((resource) => (
-          <>
-            {resource.category.includes("Capcom") ? (
-              <ResourceCard
-                title={resource.title}
-                type={resource.type}
-                link={resource.link}
-              />
-            ) : (
-              ""
-            )}
-          </>
-        ))}
+      <div className="py-20">
+        <div className="flex flex-wrap gap-6 w-11/12 mx-auto justify-center">
+          {resources.map((resource) => (
+            <>
+              {resource.category.includes("Capcom") ? (
+                <ResourceCard
+                  title={resource.title}
+                  type={resource.type}
+                  link={resource.link}
+                  description={resource.description}
+                />
+              ) : (
+                ""
+              )}
+            </>
+          ))}
+        </div>
       </div>
     </Layout>
   );
