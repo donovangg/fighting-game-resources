@@ -65,7 +65,7 @@ export default function Home() {
         <p className="text-2xl">Have something cool to {" "}
         <Link href="/login">submit?</Link></p>
       </header>
-      <div className="flex flex-wrap gap-6 justify-center w-3/4 mx-auto pb-20">
+      <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (
           <div key={category.id}>
             <Card

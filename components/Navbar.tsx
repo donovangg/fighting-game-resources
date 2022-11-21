@@ -25,8 +25,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="flex justify-center items-center">
-            <Link href="https://playvalorant.com/en-us/" target="_blank">
-              Sign In
+            <Link href="/login">
+              Login
             </Link>
           </li>
         </ul>
