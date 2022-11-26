@@ -23,7 +23,7 @@ export default function threeD({ resources }) {
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
       <div className="py-20">
-        <div className="flex flex-wrap gap-6 w-11/12 mx-auto justify-center">
+        <div className="flex flex-wrap gap-12 w-11/12 mx-auto justify-center">
           {resources.map((resource) => (
             <>
               {resource.category.includes("3D") ? (
