@@ -25,8 +25,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="flex justify-center items-center">
-            <Link href="/login">
-              Login
+            <Link href="/submit">
+              Submit
             </Link>
           </li>
         </ul>
