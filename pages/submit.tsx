@@ -4,7 +4,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import Form from "../components/Form";
 import Header from "../components/Header";
 
-export default function sumbit() {
+export default function submit() {
   const { data: session } = useSession();
   console.log(session);
 
