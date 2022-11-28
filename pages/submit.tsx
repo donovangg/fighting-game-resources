@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Form from "../components/Form";
 import Header from "../components/Header";
-import SignInButton from "../components/SignInButton";
 
 export default function sumbit() {
   const { data: session } = useSession();

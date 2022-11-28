@@ -4,7 +4,8 @@ import Layout from "../../components/Layout";
 export default function home() {
   return (
     <Layout>
-      <h2>I'm Comin!!</h2>
+      <h2>Im Comin!!</h2>
+      <p>Resources coming soon</p>
       <iframe
         className="mx-auto"
         width="560"
