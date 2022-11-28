@@ -14,10 +14,10 @@ export default function submitResource() {
   let imgSrc = "bg-fundamentals";
   return (
     <Layout>
-      <Header title={title} imgSrc={imgSrc} subheader={subheader} />
+      {/* <Header title={title} imgSrc={imgSrc} subheader={subheader} /> */}
       <LoginButton />
 
-      {session ? (
+      {/* {session ? (
         <div>
           <h3>Thanks for logging in {session.user.email} ughara !</h3>
           <button onClick={() => signOut()}>Sign Out</button>
@@ -76,7 +76,7 @@ export default function submitResource() {
             </button>
           </div>
         </section>
-      )}
+      )} */}
     </Layout>
   );
 }
