@@ -12,6 +12,7 @@ export default function ResourceCard({ title, link, type, description }) {
         <div className="py-3 px-6 flex h-1/4 w-full absolute bottom-0 align-center">
           <a
             href={link}
+            rel="noreferrer"
             target="_blank"
             className="inline-flex items-center text-purple-600 hover:underline"
           >

@@ -8,18 +8,18 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { supabase } from "../utils/supabase";
 
 export default function submitResource() {
-  const { data: session } = useSession();
-  console.log(session);
+  // const { data: session } = useSession();
+  // console.log(session);
 
-  async function signInWithGoogle() {
-    const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-    });
-  }
+  // async function signInWithGoogle() {
+  //   const { data, error } = await supabase.auth.signInWithOAuth({
+  //     provider: "google",
+  //   });
+  // }
 
-  async function signout() {
-    const { error } = await supabase.auth.signOut()
-  }
+  // async function signout() {
+  //   const { error } = await supabase.auth.signOut()
+  // }
 
   let title = "Show me something cool";
   let subheader = "pls no sus links";
