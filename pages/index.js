@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Card from "../components/Card";
+import Card from '../components/Card'
 import { supabase } from "../utils/supabase";
 import Link from "next/link";
 

@@ -1,16 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-type CardProps = {
-  title: string;
-  imgSrc: string;
-  subheader: string;
-  description: string;
-  path: string;
-};
-
-const Card: React.FunctionComponent<CardProps> = (props) => {
-  const { title, imgSrc, subheader, description, path } = props;
+export default function Card({ title, imgSrc, subheader, description, path }) {
   return (
     <div className="relative group">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to bg-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
@@ -50,6 +41,4 @@ const Card: React.FunctionComponent<CardProps> = (props) => {
       </div>
     </div>
   );
-};
-
-export default Card;
+}
