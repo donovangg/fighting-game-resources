@@ -14,8 +14,8 @@ export const getStaticProps = async () => {
   };
 };
 
-let title = "Hire Me Pls";
-let subheader = "Dank";
+let title = "3D";
+let subheader = "Hope kick";
 let imgSrc = "bg-3d";
 
 export default function threeD({ resources }) {

@@ -2,65 +2,77 @@ import React from "react";
 
 export default function Form() {
   return (
-    <form className="w-7/12 bg-gray-800 mx-auto">
+    <form
+      action="https://formspree.io/f/mwkzjwzy"
+      method="POST"
+      className="w-7/12 bg-gray-800 p-6 rounded-lg mx-auto"
+    >
       <div className="mb-6">
-        <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
-          Your email
+        <label
+          htmlFor="countries"
+          className="block mb-2 text-md font-medium text-gray-200"
+        >
+          What type of resource would this be categorized as?
+        </label>
+        <select
+          id="type"
+          className="bg-gray-50 border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        >
+          <option>Wiki</option>
+          <option>Guide</option>
+          <option>Replays</option>
+          <option>Forum</option>
+          <option>Discord</option>
+          <option>Subreddit</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div className="mb-6">
+        <label
+          htmlFor="category"
+          className="block mb-2 text-md font-medium text-gray-200"
+        >
+          Where should this resource be placed?
+        </label>
+        <select
+          id="type"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        >
+          <option>3D</option>
+          <option>Capcom</option>
+          <option>Replays</option>
+          <option>Forum</option>
+          <option>Discord</option>
+          <option>Subreddit</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div className="mb-6">
+        <label
+          htmlFor="title"
+          className="block mb-2 text-sm font-medium text-gray-200"
+        >
+          Resource title
         </label>
         <input
-          type="email"
-          id="email"
+          type="text"
+          id="title"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          required
+        />
+      </div>
+      <div className="mb-6">
+        <label className="block mb-2 text-sm font-medium text-gray-200 ">
+          Link to your resource
+        </label>
+        <input
+          type="url"
+          id="link"
           className="bg-gray-50 border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="name@flowbite.com"
           required
         />
       </div>
-      <div className="mb-6">
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
-          Your password
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="bg-gray-50 border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          required
-        />
-      </div>
-      <div className="flex items-start mb-6">
-        <div className="flex items-center h-5">
-          <input
-            id="remember"
-            type="checkbox"
-            value=""
-            className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-            required
-          />
-        </div>
-        <label
-          htmlFor="remember"
-          className="ml-2 text-sm font-medium text-gray-200 dark:text-gray-300"
-        >
-          Remember me
-        </label>
-      </div>
-      <label
-        htmlFor="countries"
-        className="block mb-2 text-sm font-medium text-gray-900"
-      >
-        Select your country
-      </label>
-      <select
-        id="countries"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-      >
-        <option>United States</option>
-        <option>Canada</option>
-        <option>France</option>
-        <option>Germany</option>
-      </select>
       <button
         type="submit"
         className="text-white bg-blue-700 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"

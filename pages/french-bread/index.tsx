@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
 };
 
 let title = "French Bread";
-let subheader = "Dank";
+let subheader = "Alone on Friday night?";
 let imgSrc = "bg-bread";
 
 export default function home({ resources }) {
