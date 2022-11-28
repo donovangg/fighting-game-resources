@@ -2,20 +2,52 @@ import React from "react";
 import Layout from "../components/Layout";
 import Form from "../components/Form";
 import Header from "../components/Header";
-import LoginButton from "../components/loginButton";
+import { createClient } from "@supabase/supabase-js";
+import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { supabase } from "../utils/supabase";
 
 export default function submitResource() {
   const { data: session } = useSession();
   console.log(session);
+
+  async function signInWithGoogle() {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+    });
+  }
+
+  async function signout() {
+    const { error } = await supabase.auth.signOut()
+  }
 
   let title = "Show me something cool";
   let subheader = "pls no sus links";
   let imgSrc = "bg-fundamentals";
   return (
     <Layout>
-      {/* <Header title={title} imgSrc={imgSrc} subheader={subheader} /> */}
-      <LoginButton />
+      <Header title={title} imgSrc={imgSrc} subheader={subheader} />
+      <h1>IN CONSTRUCTION</h1>
+      {/* <button onClick={signInWithGoogle}>Sign in</button>
+
+      <button onClick={signout}>Sign Out</button> */}
+      {/* <div className="border-2 w-7/12 mx-auto">
+        <Auth
+          supabaseClient={supabase}
+          providers={['google']}
+          appearance={{
+            theme: ThemeSupa,
+            variables: {
+              default: {
+                colors: {
+                  brand: "red",
+                  brandAccent: "darkred",
+                },
+              },
+            },
+          }}
+        />
+      </div> */}
 
       {/* {session ? (
         <div>

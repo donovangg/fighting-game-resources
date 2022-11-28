@@ -1,20 +1,23 @@
-import React from "react";
-import { useSession, signIn, signOut } from "next-auth/react";
+// import React from "react";
+// import { createClient } from "@supabase/supabase-js";
+// import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 
-export default function LoginButton() {
-  const { data: session } = useSession();
-  if (session) {
-    return (
-      <div>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </div>
-    );
-  }
-  return (
-    <div>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </div>
-  );
-}
+// const supabase = createClient(
+//   "https://qczsiistziidnaavyrgw.supabase.co",
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjenNpaXN0emlpZG5hYXZ5cmd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjU3OTM3ODMsImV4cCI6MTk4MTM2OTc4M30.dC3GGHz5-hDCdjHaDMqSXZ9heNlg9eI2LZOCsJt241M"
+// );
+
+// <Auth
+// supabaseClient={supabase}
+// appearance={{
+//   theme: ThemeSupa,
+//   variables: {
+//     default: {
+//       colors: {
+//         brand: "red",
+//         brandAccent: "darkred",
+//       },
+//     },
+//   },
+// }}
+// />
