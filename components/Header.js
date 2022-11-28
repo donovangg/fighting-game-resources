@@ -1,14 +1,8 @@
 import React from "react";
 
-type HeaderProps = {
-  title: string;
-  imgSrc: string;
-  subheader: string;
-};
 
 
-const Header: React.FunctionComponent<HeaderProps> = (props) =>  {
-  const { title, imgSrc, subheader } = props;
+export default function Header({title, imgSrc, subheader}) {
   return (
     <header
       className={`w-screen relative flex justify-center flex-col py-20 items-center bg-no-repeat bg-cover ${imgSrc}`}
@@ -22,5 +16,3 @@ const Header: React.FunctionComponent<HeaderProps> = (props) =>  {
     </header>
   );
 }
-
-export default Header;

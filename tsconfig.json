@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Form.js", "components/Header.js", "components/Layout.js", "components/LoginButton.js", "components/Navbar.js", "components/ResourceCard.js", "pages/_app.js", "pages/submit-resource.js", "pages/index.js", "pages/api/auth/[...nextauth].js", "pages/fundamentals/index.js", "pages/nrs/index.js", "pages/french-bread/index.js", "pages/capcom/index.js", "pages/airdashers/index.js", "pages/3d/index.js", "components/Card.js"],
   "exclude": ["node_modules"]
 }
