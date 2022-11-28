@@ -1,20 +1,22 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { useSession, signIn, signOut } from "next-auth/react";
 import Form from "../components/Form";
 import Header from "../components/Header";
+import LoginButton from "../components/loginButton";
+import { useSession, signIn, signOut } from "next-auth/react";
 
-export default function submit() {
+export default function submitResource() {
   const { data: session } = useSession();
   console.log(session);
 
   let title = "Show me something cool";
   let subheader = "pls no sus links";
   let imgSrc = "bg-fundamentals";
-
   return (
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
+      <LoginButton />
+
       {session ? (
         <div>
           <h3>Thanks for logging in {session.user.email} ughara !</h3>
