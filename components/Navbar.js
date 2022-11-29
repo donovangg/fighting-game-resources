@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="border-b-2 py-4">
+    <nav className="border-b-2 w-screen py-4">
       <ul className=" grid grid-cols-2">
         <li className="flex justify-center">
           <Link href="/">

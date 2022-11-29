@@ -16,13 +16,13 @@ export const getStaticProps = async () => {
 
 let title = "Airdashers";
 let subheader = "Daisuke's vision";
-let imgSrc = "bg-bread";
+let imgSrc = "bg-airdasher";
 
 export default function home({ resources }) {
   return (
     <Layout>
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="py-20">
+      <div className="py-20 border-2 border-red-500 w-screen">
         <div className="flex flex-wrap gap-12 w-11/12 mx-auto justify-center">
           {resources.map((resource) => (
             <>

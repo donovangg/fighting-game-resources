@@ -61,9 +61,9 @@ export default function Home() {
     <Layout>
       <header className="flex flex-col justify-center items-center py-20">
         <h1 className="text-5xl text-center mb-4">Some <span className="text-indigo-500">Fighting Game Resources</span> for you</h1>
-        <h2 className="text-4xl mb-4">Make sure you have <span className="text-pink-500">Fun!</span></h2>
+        <h2 className="text-4xl mb-4 text-center">Make sure you have <span className="text-pink-500">Fun!</span></h2>
         <p className="text-2xl">Have something cool to {" "}
-        <Link href="/login">submit?</Link></p>
+        <Link href="/login" className="underline">submit?</Link></p>
       </header>
       <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (
