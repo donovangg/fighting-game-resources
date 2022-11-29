@@ -1,11 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Form from "../components/Form";
+
 import Header from "../components/Header";
-import { createClient } from "@supabase/supabase-js";
-import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
-import { useSession, signIn, signOut } from "next-auth/react";
-import { supabase } from "../utils/supabase";
+
 
 export default function submitResource() {
   // const { data: session } = useSession();
