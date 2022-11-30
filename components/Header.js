@@ -5,7 +5,7 @@ import React from "react";
 export default function Header({title, imgSrc, subheader}) {
   return (
     <header
-      className={`w-screen overflow-hidden relative flex justify-center flex-col py-20 items-center bg-no-repeat bg-cover ${imgSrc}`}
+      className={`overflow-hidden relative flex justify-center flex-col py-20 items-center bg-no-repeat bg-cover ${imgSrc}`}
     >
       <div className="z-50 text-center">
         <h2 className="text-6xl">{title}</h2>

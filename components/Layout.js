@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen overflow-x-hidden text-white">
       <Navbar />
       <main className="min-h-full w-screen">{children}</main>
     </div>

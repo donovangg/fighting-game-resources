@@ -24,7 +24,7 @@ export default function home({ resources }) {
     <Layout>
       <HeadInfo title={title} />
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="py-20 border-2 w-screen">
+      <div className="py-20 w-screen">
         <div className="flex flex-wrap gap-12 w-11/12 mx-auto justify-center">
           {resources.map((resource) => (
             <>
