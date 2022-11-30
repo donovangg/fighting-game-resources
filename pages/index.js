@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Card from '../components/Card'
+import Card from "../components/Card";
 import { supabase } from "../utils/supabase";
 import Link from "next/link";
 
@@ -59,11 +59,24 @@ const categories = [
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>FGC Resources</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <header className="flex flex-col justify-center items-center py-20">
-        <h1 className="text-5xl text-center mb-4">Some <span className="text-indigo-500">Fighting Game Resources</span> for you</h1>
-        <h2 className="text-4xl mb-4 text-center">Make sure you have <span className="text-pink-500">Fun!</span></h2>
-        <p className="text-2xl">Have something cool to {" "}
-        <Link href="/login" className="underline">submit?</Link></p>
+        <h1 className="text-5xl text-center mb-4">
+          Some <span className="text-indigo-500">Fighting Game Resources</span>{" "}
+          for you
+        </h1>
+        <h2 className="text-4xl mb-4 text-center">
+          Make sure you have <span className="text-pink-500">Fun!</span>
+        </h2>
+        <p className="text-2xl">
+          Have something cool to{" "}
+          <Link href="/login" className="underline">
+            submit?
+          </Link>
+        </p>
       </header>
       <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (

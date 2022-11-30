@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import { supabase } from "../../utils/supabase";
 import ResourceCard from "../../components/ResourceCard";
 import Header from "../../components/Header";
+import HeadInfo from "../../components/HeadInfo";
 
 export const getStaticProps = async () => {
   const { data: resources } = await supabase.from("resources").select("*");
@@ -21,24 +22,25 @@ let imgSrc = "bg-fundamentals";
 export default function home({ resources }) {
   return (
     <Layout>
+      <HeadInfo title={title} />
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
       <div className="py-20">
-      <div className="flex flex-wrap gap-12 w-11/12 mx-auto content-center justify-center">
-        {resources.map((resource) => (
-          <>
-            {resource.category.includes("Fundamentals") ? (
-              <ResourceCard
-                title={resource.title}
-                type={resource.type}
-                link={resource.link}
-                description={resource.description}
-              />
-            ) : (
-              ""
-            )}
-          </>
-        ))}
-      </div>
+        <div className="flex flex-wrap gap-12 w-11/12 mx-auto content-center justify-center">
+          {resources.map((resource) => (
+            <>
+              {resource.category.includes("Fundamentals") ? (
+                <ResourceCard
+                  title={resource.title}
+                  type={resource.type}
+                  link={resource.link}
+                  description={resource.description}
+                />
+              ) : (
+                ""
+              )}
+            </>
+          ))}
+        </div>
       </div>
     </Layout>
   );
