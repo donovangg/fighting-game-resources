@@ -4,6 +4,7 @@ import { supabase } from "../../utils/supabase";
 import ResourceCard from "../../components/ResourceCard";
 import Header from "../../components/Header";
 import HeadInfo from "../../components/HeadInfo";
+import BackBtn from '../../components/BackBtn'
 
 export const getStaticProps = async () => {
   const { data: resources } = await supabase.from("resources").select("*");
@@ -24,7 +25,7 @@ export default function threeD({ resources }) {
     <Layout>
       <HeadInfo title={title} />
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="py-20">
+      <div className="py-20 border-2">
         <div className="flex flex-wrap gap-12 w-11/12 mx-auto justify-center">
           {resources.map((resource) => (
             <>

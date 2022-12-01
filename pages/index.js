@@ -87,20 +87,26 @@ export default function Home() {
           content="https://qczsiistziidnaavyrgw.supabase.co/storage/v1/object/sign/assets/yun.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMveXVuLmpwZWciLCJpYXQiOjE2Njk4MDMxNTYsImV4cCI6MTk4NTE2MzE1Nn0.ctNVZ7ye4RgieMeFiLGekZGr9r4daElUPwyv_fI4ZJA"
         />
       </Head>
-      <header className="flex flex-col justify-center items-center py-20">
-        <h1 className="text-5xl text-center mb-4">
-          Some <span className="text-indigo-500">Fighting Game Resources</span>{" "}
-          for you
-        </h1>
-        <h2 className="text-4xl mb-4 text-center">
-          Make sure you have <span className="text-pink-500">Fun!</span>
-        </h2>
-        <p className="text-2xl">
-          Have something cool to{" "}
-          <Link href="/login" className="underline">
-            submit?
-          </Link>
-        </p>
+      <header>
+        <div className="flex flex-col justify-center items-center py-20">
+          <h1 className="text-center text-4xl text-gray-100 mb-4 md:text-5xl">
+            <span className="text-indigo-500">Fighting Game Resources</span> for
+            you
+          </h1>
+          <h2 className="mb-4 text-3xl text-center">
+            Find your <span className="text-pink-500">throw tech </span>fuzzy
+            abare OS
+          </h2>
+          <p className="text-2xl">
+            Have something cool to{" "}
+            <Link
+              href="/login"
+              className="underline hover:text-pink-500 transition duration-75"
+            >
+              submit?
+            </Link>
+          </p>
+        </div>
       </header>
       <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (
