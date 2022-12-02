@@ -25,7 +25,7 @@ export default function threeD({ resources }) {
     <Layout>
       <HeadInfo title={title} />
       <Header title={title} imgSrc={imgSrc} subheader={subheader} />
-      <div className="py-20 border-2">
+      <div className="py-20">
         <div className="flex flex-wrap gap-12 w-11/12 mx-auto justify-center">
           {resources.map((resource) => (
             <>

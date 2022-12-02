@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
-import { supabase } from "../utils/supabase";
-import Link from "next/link";
 
 const categories = [
   {
@@ -17,7 +15,7 @@ const categories = [
   {
     id: 2,
     title: "Capcom",
-    subheader: "3,2,1 Shoryukenn",
+    subheader: "3...2...1 Shoryuken",
     description: "For games like SF6, CVS2, 3S, Mahvel",
     path: "./capcom",
     imgSrc: "assets/capcom.webp",
@@ -25,8 +23,8 @@ const categories = [
   {
     id: 3,
     title: "Airdashers",
-    subheader: "Kokonoe Black Hole setups",
-    description: "Come here for Guilty Gear, BB, P4u",
+    subheader: "Play Birthday Train",
+    description: "Come here for Guilty Gear, BB, P4U",
     path: "./airdashers",
     imgSrc: "assets/mr-dolphin.jpeg",
   },
@@ -97,15 +95,6 @@ export default function Home() {
             Find your <span className="text-pink-500">throw tech </span>fuzzy
             abare OS
           </h2>
-          <p className="text-2xl">
-            Have something cool to{" "}
-            <Link
-              href="/login"
-              className="underline hover:text-pink-500 transition duration-75"
-            >
-              submit?
-            </Link>
-          </p>
         </div>
       </header>
       <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
