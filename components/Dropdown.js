@@ -1,14 +1,18 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 function Dropdown() {
   return (
     <div className="text-right z-50">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-md bg-indigo-500 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            Categories
+          <Menu.Button className="inline-flex w-full justify-center rounded-md px-4 py-2 text-sm font-medium text-white hover:text-violet-500 transition duration-75 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <div className="flex items-center gap-2">
+              <span className="text-lg">Categories</span>
+              <FaChevronDown />
+            </div>
           </Menu.Button>
         </div>
         <Transition
@@ -59,6 +63,19 @@ function Dropdown() {
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                     >
                       Airdashers
+                    </button>
+                  </Link>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <Link href="/3d">
+                    <button
+                      className={`${
+                        active ? "bg-violet-500 text-white" : "text-gray-900"
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    >
+                      3D
                     </button>
                   </Link>
                 )}

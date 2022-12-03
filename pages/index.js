@@ -23,7 +23,7 @@ const categories = [
   {
     id: 3,
     title: "Airdashers",
-    subheader: "Play Birthday Train",
+    subheader: "Goodbye Tuesday train",
     description: "Come here for Guilty Gear, BB, P4U",
     path: "./airdashers",
     imgSrc: "assets/mr-dolphin.jpeg",
@@ -87,13 +87,19 @@ export default function Home() {
       </Head>
       <header>
         <div className="flex flex-col justify-center items-center py-20">
-          <h1 className="text-center text-4xl text-gray-100 mb-4 md:text-5xl">
-            <span className="text-indigo-500">Fighting Game Resources</span> for
-            you
+          <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
+              Fighting Game Resources
+            </span>
+           {" "} for you
           </h1>
-          <h2 className="mb-4 text-3xl text-center">
-            Find your <span className="text-pink-500">throw tech </span>fuzzy
-            abare OS
+          <h2 className="mb-4 text-4xl text-center">
+            Find your{" "}
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
+              {" "}
+              throw tech{" "}
+            </span>
+            fuzzy abare OS
           </h2>
         </div>
       </header>

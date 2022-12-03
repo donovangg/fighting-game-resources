@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Card({ title, imgSrc, subheader, description, path }) {
   return (
     <div className="relative group">
-      <div className="absolute -inset-0.5 hover:bg-gradient-to-r from-pink-600 to bg-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-200"></div>
+      <div className="absolute -inset-0.5 hover:bg-gradient-to-r from-pink-600 to bg-violet-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-200"></div>
       <div className="relative w-80 flex flex-col rounded-lg bg-zinc-800 border-gray-700 shadow-md">
         <div className="flex-1">
           <Link href={path}>
@@ -21,9 +21,9 @@ export default function Card({ title, imgSrc, subheader, description, path }) {
           <p className="mb-3 font-normal text-gray-400">{description}</p>
           <Link
             href={path}
-            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-violet-700 rounded-lg hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-            Read more
+            Check this out
             <svg
               aria-hidden="true"
               className="ml-2 -mr-1 w-4 h-4"
