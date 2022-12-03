@@ -86,7 +86,8 @@ export default function Home() {
         />
       </Head>
       <header>
-        <div className="flex flex-col justify-center items-center py-20">
+        
+        <div className="mx-auto max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
           <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
               Fighting Game Resources
