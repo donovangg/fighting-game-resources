@@ -8,10 +8,10 @@ import { useSession, signOut, signIn } from "next-auth/react";
 export default function Navbar() {
   const { data: session, status } = useSession();
   return (
-    <nav className="border-b-2 border-gray-400 w-full py-4">
+    <nav className="border-b-2 font-sans border-gray-400 w-full py-4">
       <ul className="w-full mx-auto grid grid-cols-4 lg:w-3/5">
-        <ul className="flex gap-6 justify-center items-center">
-          <li className="flex justify-center">
+        <ul className="hidden  md:flex md:gap-6 md:justify-center md:items-center">
+          <li className="justify-center md:flex">
             <Link href="/">
               <Image
                 src="/assets/ryu.png"
@@ -23,7 +23,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <ul className="flex col-span-3 justify-center gap-6">
+        <ul className="flex w-screen justify-center md:flex md:col-span-3 md:justify-center md:w-full gap-6 ">
           <li>
             <Dropdown />
           </li>
