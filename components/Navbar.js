@@ -33,7 +33,7 @@ export default function Navbar() {
           {status === "authenticated" ? (
             <button
               className=" hover:text-violet-500 transition duration-75"
-              onClick={() => signOut({ callbackUrl: 'http://localhost:3000' })}
+              onClick={() => signOut({ callbackUrl: 'http://localhost:3000/logged-out' })}
             >
               Sign out
             </button>
