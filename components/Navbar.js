@@ -27,11 +27,16 @@ export default function Navbar() {
           <li>
             <Dropdown />
           </li>
-          <li className="flex justify-center items-center">
+          <li className="flex justify-center items-center  hover:text-violet-500 transition duration-75">
             <Link href="/submit">Submit</Link>
           </li>
           {status === "authenticated" ? (
-            <button onClick={() => signOut()}>Sign out</button>
+            <button
+              className=" hover:text-violet-500 transition duration-75"
+              onClick={() => signOut()}
+            >
+              Sign out
+            </button>
           ) : (
             ""
           )}
