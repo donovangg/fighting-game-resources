@@ -41,11 +41,11 @@ export default function Form() {
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         >
           <option>3D</option>
+          <option>Airdashers</option>
           <option>Capcom</option>
-          <option>Replays</option>
-          <option>Forum</option>
-          <option>Discord</option>
-          <option>Subreddit</option>
+          <option>French Bread</option>
+          <option>Fundamentals</option>
+          <option>NRS</option>
           <option>Other</option>
         </select>
       </div>
@@ -60,8 +60,10 @@ export default function Form() {
           type="text"
           name="title"
           id="title"
+          placeholder="El Fuerte RSF Tutorial"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           required
+          minlength="3" maxlength="30"
         />
       </div>
       <div className="mb-6">

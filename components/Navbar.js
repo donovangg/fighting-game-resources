@@ -33,12 +33,14 @@ export default function Navbar() {
           {status === "authenticated" ? (
             <button
               className=" hover:text-violet-500 transition duration-75"
-              onClick={() => signOut()}
+              onClick={() => signOut({ callbackUrl: 'http://localhost:3000' })}
             >
               Sign out
             </button>
           ) : (
-            ""
+            <li className="flex justify-center items-center  hover:text-violet-500 transition duration-75">
+              <Link href="/submit">Sign In</Link>
+            </li>
           )}
         </ul>
       </ul>
