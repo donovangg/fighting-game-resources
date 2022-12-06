@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,6 +16,7 @@ module.exports = {
         'fundamentals': "url('/assets/footsies.gif')",
         'bread': "url('/assets/akiha.jpeg')",
         '3d':  "url('/assets/3d.png')",
+        'submit': "url(/assets/mentos.webp)"
       }
     },
   },
