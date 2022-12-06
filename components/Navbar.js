@@ -3,8 +3,10 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import Dropdown from "./Dropdown";
+import { useSession, signOut, signIn } from "next-auth/react";
 
 export default function Navbar() {
+  const { data: session, status } = useSession();
   return (
     <nav className="border-b-2 border-gray-400 w-full py-4">
       <ul className="w-full mx-auto grid grid-cols-4 lg:w-3/5">
@@ -28,6 +30,11 @@ export default function Navbar() {
           <li className="flex justify-center items-center">
             <Link href="/submit">Submit</Link>
           </li>
+          {status === "authenticated" ? (
+            <button onClick={() => signOut()}>Sign out</button>
+          ) : (
+            ""
+          )}
         </ul>
       </ul>
     </nav>
