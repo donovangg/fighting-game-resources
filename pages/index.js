@@ -26,7 +26,7 @@ const categories = [
     subheader: "Goodbye Tuesday train",
     description: "Come here for Guilty Gear, BB, P4U",
     path: "./airdashers",
-    imgSrc: "assets/mr-dolphin.jpeg",
+    imgSrc: "assets/mr-dolphin.webp",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const categories = [
     subheader: "Lord Kamone",
     description: "For Dengeki, Uni, Melty Blood",
     path: "./french-bread",
-    imgSrc: "assets/akiha.jpeg",
+    imgSrc: "assets/akiha.webp",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const categories = [
     subheader: "Check this kbd",
     description: "Tekken, Soul Calibur, VF, DOA",
     path: "./3d",
-    imgSrc: "assets/3d.png",
+    imgSrc: "assets/3d.webp",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const categories = [
     subheader: "I'm Comin!!!",
     description: "MK and Injustice",
     path: "./nrs",
-    imgSrc: "assets/nrs.jpeg",
+    imgSrc: "assets/nrs.webp",
   },
 ];
 

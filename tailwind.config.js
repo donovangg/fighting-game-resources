@@ -11,11 +11,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'airdasher': "url('/assets/mr-dolphin.jpeg')",
+        'airdasher': "url('/assets/mr-dolphin.webp')",
         'capcom': "url('/assets/capcom.webp')",
         'fundamentals': "url('/assets/footsies.gif')",
-        'bread': "url('/assets/akiha.jpeg')",
-        '3d':  "url('/assets/3d.png')",
+        'bread': "url('/assets/akiha.webp')",
+        '3d':  "url('/assets/3d.webp')",
         'submit': "url(/assets/mentos.webp)"
       }
     },
