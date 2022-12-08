@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({ title, imgSrc, subheader, description, path }) {
   return (
-    <div className="relative group">
+    <div className="relative selection:bg-pink-600 group">
       <div className="absolute -inset-0.5 hover:bg-gradient-to-r from-pink-600 to bg-violet-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-200"></div>
       <div className="relative w-80 flex flex-col rounded-lg bg-zinc-800 border-gray-700 shadow-md">
         <div className="flex-1">

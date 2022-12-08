@@ -87,7 +87,7 @@ export default function Home() {
       </Head>
       <header>
         
-        <div className="mx-auto max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
+        <div className="mx-auto selection:bg-purple-600 max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
           <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
               Fighting Game Resources
@@ -104,7 +104,7 @@ export default function Home() {
           </h2>
         </div>
       </header>
-      <div className="flex flex-wrap gap-10 justify-center w-3/4 mx-auto pb-20">
+      <div className="flex flex-wrap gap-12 justify-center w-3/4 mx-auto pb-20">
         {categories.map((category) => (
           <div key={category.id}>
             <Card
