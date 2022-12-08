@@ -38,9 +38,7 @@ export default function Navbar() {
               Sign out
             </button>
           ) : (
-            <li className="flex justify-center items-center  hover:text-violet-500 transition duration-75">
-              <Link href="/submit">Sign In</Link>
-            </li>
+            ""
           )}
         </ul>
       </ul>
