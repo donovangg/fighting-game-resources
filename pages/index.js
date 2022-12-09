@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 
@@ -58,11 +57,11 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>FGC Resources</title>
+        <title>iTechedThat | FGC Resources</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="FGC Resources" />
-        <meta property="og:description" content="undefined" />
+        <meta property="og:description" content="Fighting game resource hub" />
         <meta
           property="og:image"
           content="https://qczsiistziidnaavyrgw.supabase.co/storage/v1/object/sign/assets/yun.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMveXVuLmpwZWciLCJpYXQiOjE2Njk4MDMxNTYsImV4cCI6MTk4NTE2MzE1Nn0.ctNVZ7ye4RgieMeFiLGekZGr9r4daElUPwyv_fI4ZJA"
@@ -72,14 +71,14 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:domain"
-          content="fighting-game-resources-s5l6.vercel.app"
+          content="https://www.itechedthat.com/"
         />
         <meta
           property="twitter:url"
-          content="https://fighting-game-resources-s5l6.vercel.app/"
+          content="https://www.itechedthat.com/"
         />
         <meta name="twitter:title" content="FGC Resources" />
-        <meta name="twitter:description" content="undefined" />
+        <meta name="twitter:description" content="Fighting game resource hub" />
         <meta
           name="twitter:image"
           content="https://qczsiistziidnaavyrgw.supabase.co/storage/v1/object/sign/assets/yun.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMveXVuLmpwZWciLCJpYXQiOjE2Njk4MDMxNTYsImV4cCI6MTk4NTE2MzE1Nn0.ctNVZ7ye4RgieMeFiLGekZGr9r4daElUPwyv_fI4ZJA"
@@ -87,7 +86,7 @@ export default function Home() {
       </Head>
       <header>
         
-        <div className="mx-auto selection:bg-purple-600 max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
+        <div className="mx-auto  max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
           <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
               Fighting Game Resources
