@@ -1,3 +1,27 @@
+#iTechedThat: Fighting Game Resource hub
+Fighting game resource hub submitted by the community.
+
+#iTechedThat Inspiration
+Fighting games are hard. Tutorials in game kinda suck and a lot of teaching is left to the community.
+The community has plenty of good resources for many different games but some are hard to find.
+After looking for awhile on a r/streetfighter I realized, maybe other people are looking for this. It
+would be cool if there was a single site for some cool stuff to check out.
+
+#Tech stack sandwich
+I really enjoyed using file based routing with Next, styling with Tailwind and Supabase to get up and running for my backend. Next Auth takes care of the Google Auth and the Form that users submit goes to Formspree.
+
+#Todo
+--Pagination and sorting when more resources are submitted
+--FGC Twitch featured section.
+--Convert to Typescript.
+
+#Running the project
+Well this is a Next app so almost the same rules apply.
+
+first clone this repo and install it on your machine.
+
+Than its just a Next App:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -11,25 +35,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# fighting-game-resources
