@@ -16,7 +16,7 @@ const categories = [
     id: 2,
     title: "Capcom",
     subheader: "3...2...1 Shoryuken",
-    description: "For games like SF6, CVS2, 3S, Mahvel",
+    description: "For games like SF, CVS2, 3S, Mahvel",
     path: "./capcom",
     imgSrc: "assets/capcom.webp",
   },
