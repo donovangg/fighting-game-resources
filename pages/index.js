@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Card from "../components/Card";
+import Link from "next/link";
 
 const categories = [
   {
@@ -54,6 +55,8 @@ const categories = [
 ];
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Layout>
       <Head>
@@ -73,10 +76,7 @@ export default function Home() {
           property="twitter:domain"
           content="https://www.itechedthat.com/"
         />
-        <meta
-          property="twitter:url"
-          content="https://www.itechedthat.com/"
-        />
+        <meta property="twitter:url" content="https://www.itechedthat.com/" />
         <meta name="twitter:title" content="FGC Resources" />
         <meta name="twitter:description" content="Fighting game resource hub" />
         <meta
@@ -85,13 +85,12 @@ export default function Home() {
         />
       </Head>
       <header>
-        
         <div className="mx-auto  max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
           <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
               Fighting Game Resources
-            </span>
-           {" "} for you
+            </span>{" "}
+            for you
           </h1>
           <h2 className="mb-4 text-4xl text-center">
             Find your{" "}
@@ -116,6 +115,36 @@ export default function Home() {
           </div>
         ))}
       </div>
+      <footer className="mx-auto flex flex-col justify-center w-full max-w-screen-lg px-4 text-xs opacity-75">
+        <p className="mx-auto">&copy; {currentYear} hellodonovan </p>
+        <div className="flex mx-auto align-center items-center">
+          <p>Made with</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-heart"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#6f32be"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+          <p>and </p>
+          <Link
+            href="https://nextjs.org/"
+            target="_blank"
+            className="text-purple-600 hover:text-pink-600 hover:duration-75"
+            rel="noopener"
+          >
+            NextJS
+          </Link>
+        </div>
+      </footer>
     </Layout>
   );
 }
