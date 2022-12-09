@@ -33,7 +33,7 @@ export default function Navbar() {
           {status === "authenticated" ? (
             <button
               className=" hover:text-violet-500 transition duration-75"
-              onClick={() => signOut({ callbackUrl: 'https://fighting-game-resources-s5l6.vercel.app/logged-out' })}
+              onClick={() => signOut({ callbackUrl: 'https://www.itechedthat.com/logged-out' })}
             >
               Sign out
             </button>
