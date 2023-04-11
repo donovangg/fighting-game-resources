@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header({title, imgSrc, subheader}) {
+export default function Header({ title, imgSrc, subheader }) {
   return (
     <header
       className={`overflow-hidden relative flex justify-center flex-col py-20 items-center bg-no-repeat bg-cover ${imgSrc}`}

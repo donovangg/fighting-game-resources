@@ -6,6 +6,7 @@ export default function Form() {
       action="https://formspree.io/f/mwkzjwzy"
       method="POST"
       className="w-7/12 bg-gray-800 p-6 rounded-lg mx-auto"
+      data-testid="form-test"
     >
       <div className="mb-6">
         <label

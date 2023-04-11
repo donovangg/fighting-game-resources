@@ -22,7 +22,7 @@ export default function Submit() {
           <p className="text-xl my-4">All submissions will be reviewed.</p>
         </div>
         <div className="pb-20">
-          <Form />
+          <Form data-testid="form-test" />
         </div>
       </Layout>
     );
