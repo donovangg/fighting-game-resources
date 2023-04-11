@@ -84,7 +84,7 @@ export default function Home() {
           content="https://qczsiistziidnaavyrgw.supabase.co/storage/v1/object/sign/assets/yun.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMveXVuLmpwZWciLCJpYXQiOjE2Njk4MDMxNTYsImV4cCI6MTk4NTE2MzE1Nn0.ctNVZ7ye4RgieMeFiLGekZGr9r4daElUPwyv_fI4ZJA"
         />
       </Head>
-      <header data-testid="test-1">
+      <header>
         <div className="mx-auto  max-w-md flex-col py-14 sm:max-w-2xl sm:px-6  lg:flex lg:items-center lg:pl-0 lg:text-left">
           <h1 className="text-center text-5xl text-gray-100 mb-4 md:text-6xl">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
